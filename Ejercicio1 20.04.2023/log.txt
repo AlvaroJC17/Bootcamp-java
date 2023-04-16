@@ -1,0 +1,14 @@
+F:\Alvaro\One Drive\OneDrive\Cursos\Bootcamp Desarrollador Java\Bootcamp-java>git log
+commit 97a2efd0df8816890d749c02b8454b20d97bd672 (HEAD -> GIT, origin/GIT)
+Author: Alvaro <alvarocortesia@gmail.com>
+Date:   Sat Apr 15 21:07:47 2023 -0300
+
+    creacion del archivo readme y log
+
+commit 7980617e67d633ce2943f09cb84c297a55169020 (origin/main, origin/HEAD, main)
+Author: Alvaro <116984643+AlvaroJC17@users.noreply.github.com>
+Date:   Sat Apr 15 21:01:50 2023 -0300
+
+    Initial commit
+
+F:\Alvaro\One Drive\OneDrive\Cursos\Bootcamp Desarrollador Java\Bootcamp-java>
