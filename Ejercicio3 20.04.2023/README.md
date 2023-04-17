@@ -11,6 +11,6 @@ Ejercicio 2:
 
 * Suponiendo que me encuentre en la rama main, utilizo el comando git switch para moverme a la rama front-react.
 * Dentro de la rama front-react verifico que todos los cambios esten correctamente comiteados con el comando git status.
-* De no haber alguna cambio pendiente, utilizo el comando git add . y luego git commit -m respectivamente.
-*Finalmente utilzo el comando git merge master/main para subir los cambios la rama master que es la de produccion. 
+* De haber alguna cambio pendiente, utilizo el comando git add . y luego git commit -m respectivamente.
+* Finalmente utilzo el comando git merge master/main para subir los cambios la rama master que es la de produccion. 
 
