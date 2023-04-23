@@ -26,7 +26,6 @@ body{
     padding: 90px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    
 }
 
 .segunda{
@@ -36,9 +35,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-    
-    
-   
 
 .tercera{
     font-size: 163pt;
@@ -46,7 +42,6 @@ body{
     margin: 0%;
     padding: 160px;
     font-weight: bold;
-    
 }
 
 .cuarta{
@@ -55,18 +50,13 @@ body{
     margin: 0%;
     padding: 5px;
     font-weight:lighter ;
-    
-    
 }
-
+    
 .quinta{
     font-size: 44pt;
-    margin-bottom: 0%;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 60px;
-    
-    
 }
 
 strong{
@@ -76,3 +66,12 @@ strong{
 b{
     font-weight: lighter;
 }
+    
+
+    
+    
+
+    
+    
+
+
