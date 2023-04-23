@@ -1,0 +1,40 @@
+
+
+.primera, .segunda, .tercera, .cuarta, .quinta { 
+    text-align: center;}
+
+.primera, .tercera, .quinta {
+    background-color: black;
+    color: white;
+}
+
+.segunda, .cuarta{
+    color: black;
+}
+
+body{
+    margin: 0%;
+}
+
+.primera{
+    font-size: 50pt;
+    margin-top: 0%;
+}
+
+.segunda{
+    font-size: 148pt;
+}
+
+.tercera{
+    font-size: 163pt;
+}
+
+.cuarta{
+    font-size: 45pt;
+}
+
+.quinta{
+    font-size: 44pt;
+    margin-bottom: 0%;
+}
+
