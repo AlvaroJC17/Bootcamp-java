@@ -1,40 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
 
 
-.primera, .segunda, .tercera, .cuarta, .quinta { 
-    text-align: center;}
 
 .primera, .tercera, .quinta {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 .segunda, .cuarta{
     color: black;
+    text-align: center;
 }
 
 body{
     margin: 0%;
+    height: auto;
+    border-style: groove;
+    border-color: black;
 }
 
 .primera{
     font-size: 50pt;
-    margin-top: 0%;
+    margin: 0%;
+    padding: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
 }
 
 .segunda{
     font-size: 148pt;
+    padding: 0px;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
+    
+    
+   
 
 .tercera{
     font-size: 163pt;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 160px;
+    font-weight: bold;
+    
 }
 
 .cuarta{
     font-size: 45pt;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 5px;
+    font-weight:lighter ;
+    
+    
 }
 
 .quinta{
     font-size: 44pt;
     margin-bottom: 0%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 60px;
+    
+    
 }
 
+strong{
+    font-family: 'Montserrat'
+}
+
+b{
+    font-weight: lighter;
+}
