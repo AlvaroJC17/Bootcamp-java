@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.parra1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 59pt;
+    color: #0a2ff1;
+    margin-bottom: 0%;
+}
+
+.parra2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 59pt;
+    color: #0a2ff1;
+    margin-top: 0%;
+}
+
+.parra3{
+    margin-bottom: 0;
+}
+
+.socialme{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #3ffff3;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 23pt;
+    color: #0a2ff1;
+}
+
+img{
+   background-color: #8a9af1;
+   
+}
+

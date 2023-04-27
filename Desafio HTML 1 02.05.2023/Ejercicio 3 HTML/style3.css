@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
 
 
-
+p{
+    margin: 0%;
+}
 
 body{
     margin: 0%;
-    height: auto;
-    border-style: groove;
-    
+    padding-left: 20%;
+    padding-right: 20%;
 }
-
+    
 .primera{
     font-size: 50pt;
     margin: 0%;
@@ -24,13 +25,14 @@ body{
     font-size: 148pt;
     padding: 0px;
     margin: 0%;
+    margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-align: center;
     color: white;
     background-color: black;
 }
-
+    
 .tercera{
     font-size: 163pt;
     font-family: 'Montserrat', sans-serif;
@@ -38,20 +40,17 @@ body{
     padding: 160px;
     font-weight: bold;
     text-align: center;
-    
-    
 }
 
 .cuarta{
-    font-size: 45pt;
+    font-size: 36pt;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 5px;
-    font-weight:lighter ;
     text-align: center;
     color: #0a2ff1;
 }
-    
+
 .quinta{
     font-size: 44pt;
     font-family: 'Montserrat', sans-serif;
@@ -62,12 +61,33 @@ body{
 }
 
 strong{
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
+    color: white;
+    background-color: black;
+    text-align: center;
 }
 
-b{
+.div1 {
+    
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: bolder;
+}
+
+.div2{
+
     font-weight: lighter;
 }
+    
+
+    
+
+    
+    
+
+
+
+
     
 
     

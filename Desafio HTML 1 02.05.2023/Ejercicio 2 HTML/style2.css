@@ -15,11 +15,11 @@
 
 body{
     margin: 0%;
-    height: auto;
     border-style: groove;
     border-color: black;
+    
 }
-
+    
 .primera{
     font-size: 50pt;
     margin: 0%;
@@ -40,23 +40,24 @@ body{
     font-size: 163pt;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
-    padding: 160px;
+    padding: 10%;
     font-weight: bold;
+   
 }
 
 .cuarta{
     font-size: 45pt;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
-    padding: 5px;
+    padding: 0px;
     font-weight:lighter ;
 }
-    
+
 .quinta{
     font-size: 44pt;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
-    padding: 60px;
+    padding: 60px; 
 }
 
 strong{
@@ -66,6 +67,8 @@ strong{
 b{
     font-weight: lighter;
 }
+
+
     
 
     
