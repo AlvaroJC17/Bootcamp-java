@@ -21,7 +21,7 @@ body{
 }
     
 .primera{
-    font-size: 50pt;
+    font-size: 66.66px;
     margin: 0%;
     padding: 90px;
     font-family: 'Montserrat', sans-serif;
@@ -29,7 +29,7 @@ body{
 }
 
 .segunda{
-    font-size: 148pt;
+    font-size: 197.33px;
     padding: 0px;
     margin: 0%;
     font-family: 'Montserrat', sans-serif;
@@ -37,7 +37,7 @@ body{
 }
 
 .tercera{
-    font-size: 163pt;
+    font-size: 217.33px;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 10%;
@@ -46,7 +46,7 @@ body{
 }
 
 .cuarta{
-    font-size: 45pt;
+    font-size: 60px;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 0px;
@@ -54,7 +54,7 @@ body{
 }
 
 .quinta{
-    font-size: 44pt;
+    font-size: 58.66px;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 60px; 
