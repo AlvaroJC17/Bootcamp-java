@@ -19,6 +19,7 @@
 
 .parra3{
     margin-bottom: 0;
+    
 }
 
 .socialme{
@@ -34,8 +35,28 @@ p{
     color: #0a2ff1;
 }
 
-img{
-   background-color: #8a9af1;
-   
+.fondo{
+    position: relative;
+    top: 300px;
 }
+
+.celu{
+    position: absolute;
+    bottom: 0px;
+}
+
+.imgfondo{
+    width: 730px;
+    height: 800px;
+}
+
+
+    
+    
+    
+    
+
+
+
+   
 
