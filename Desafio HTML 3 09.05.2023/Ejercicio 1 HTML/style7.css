@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+ul{
+    list-style-type:none ;
+}
+    
+img{
+    width: 55px;
+    vertical-align: middle;
+    margin-right: 15px;
+    display: inline;
+}  
+
+div{
+    margin-right: 50px;
+}
+    
+
+.parra1{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    font-size:  37.48px; ;
+    color: #04146c;
+}
+
+.parra2, .parra4, .parra6{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 21.56px;
+    color: #0a2ff1;
+    display: inline;
+}    
+
+
+.parra3, .parra5, .parra7{
+    width: 40%;
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+    font-size: 19.97px;
+    color: #04146c;
+    margin-left: 70px;
+    text-align: left;
+}    
+
+p{
+    width: 40%;
+    margin-top: 0;
+    margin-bottom: 0;
+}    
+   
+    
+
+    
+
+
+  
+
+    
+    
+    
+
+
+
