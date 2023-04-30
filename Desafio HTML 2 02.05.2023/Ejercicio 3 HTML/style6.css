@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;800;900&display=swap');
+
+body{
+
+   text-align: center;
+   border-style: groove;
+   border-color: #edf7ff;
+}
+
+.cabecera .titulo .titulodos .imagen .pie{
+   text-align: center;
+}
+
+.parra1{
+   margin-top: 0;
+}
+
+main{
+   width: 50%;
+   text-align: center;
+   margin-left: 25%;
+   margin-right: 25%;
+}
+
+.cabecera{
+   background-color: #04146c;
+   color: white;
+   font-family: 'Source Sans 3', sans-serif;
+   font-size: 38.66px;
+}
+
+.titulo{
+   color: #04146c;
+   font-family: 'Source Sans 3', sans-serif;
+   font-weight: bold;
+   font-size: 88px;
+   margin-bottom: 10px;
+}
+
+.titulodos{
+   font-family: 'Source Sans 3', sans-serif;
+   font-weight: normal;
+   color: #04146c;
+   font-size: 26.66px;
+}
+
+img{
+   width: 600px;
+}
+
+.pie{
+   font-family: 'Source Sans 3', sans-serif;
+   font-size: 24px;
+   background-color:#edf7ff;
+}
+
+   
+
+
