@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+
+
+.login{
+    border-style: groove;
+    border-color: #eff2ff;
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.formulario, .boton, .raya{
+    display: grid;
+    place-items: center;
+}
+
+.parra1{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #04146c;
+}
+
+input, button{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18.66px;
+    color: #414166;
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #0a2ff1;
+}
+
+.linea{
+    width: 500px;
+    border-bottom-style:groove;
+    border-color: black;
+    border-width: 2px;
+    height: 15px;
+}
+
+.parra2{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18.66px;
+    color: #0a2ff1;
+}
+
+a{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18.66px;
+    color: #0a2ff1;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+    
+
+
+    
+
+
+
