@@ -25,6 +25,7 @@
 
 input, button{
     font-family: 'Mulish', sans-serif;
+    font-weight: 400;
     font-size: 18.66px;
     color: #414166;
     display: block;
@@ -36,12 +37,12 @@ input, button{
 }
 
 button{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     color: white;
     background-color: #0a2ff1;
 }
-
+    
 .linea{
     width: 500px;
     border-bottom-style:groove;
@@ -52,16 +53,19 @@ button{
 
 .parra2{
     font-family: 'Mulish', sans-serif;
+    font-weight: 400;
     font-size: 18.66px;
     color: #0a2ff1;
 }
 
 a{
     font-family: 'Mulish', sans-serif;
+    font-weight: 400;
     font-size: 18.66px;
     color: #0a2ff1;
     text-decoration: none;
 }
+
 
 
 

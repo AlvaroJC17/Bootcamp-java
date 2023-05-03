@@ -14,11 +14,10 @@ img{
 div{
     margin-right: 50px;
 }
-    
 
 .parra1{
     font-family: 'Mulish', sans-serif;
-    font-weight: bolder;
+    font-weight: 900;
     font-size:  37.48px; ;
     color: #04146c;
 }
@@ -31,11 +30,10 @@ div{
     display: inline;
 }    
 
-
 .parra3, .parra5, .parra7{
     width: 40%;
     font-family: 'Mulish', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 19.97px;
     color: #04146c;
     margin-left: 70px;
@@ -47,6 +45,8 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }    
+
+
    
     
 
