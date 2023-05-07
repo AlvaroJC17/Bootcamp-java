@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+a{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 24px;
+    color: #04146c;
+    text-decoration: none;
+}
+
+.activo:active{
+    font-weight: bolder;
+}
+
+#logo{
+    width: 10%;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.titulo1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 45.33px;
+    color: #2c00cc;
+}
+
+.titulo2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30.66px;
+    color: #04146c;
+}
+
+.casillas{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 100px;
+}
+    
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30.66px;
+    font-weight: bold;
+    color: #04146c;
+    margin-top: 15px;
+}
+
+b{
+    color: red;
+}
+
+button{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    width: 160px;
+    font-size: 32px;
+    height: 50px;
+    background-color: #2c00cc;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    border-color: white;
+}
+    
+
+.reset{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+    font-size: 32px;
+    background-color: #f98500;
+    color: white;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-top: 30px;
+    border-color: white;
+}
+    

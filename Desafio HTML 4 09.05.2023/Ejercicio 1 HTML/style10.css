@@ -38,10 +38,11 @@ button{
 
 .formulario{
     padding: 30px;
-    width: 50%;
+    width: 800px;
     background-image: url(Ejercicio1/M4-desafio1-fondo-form.png);
     display: grid;
     place-items: center;
+    margin: 0 auto;
 }
 
 form{
@@ -49,6 +50,7 @@ form{
     height: 400px;
     padding: 20px;
     background-color: white;
+    
 }
 
 

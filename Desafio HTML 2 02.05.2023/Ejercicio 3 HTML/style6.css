@@ -15,11 +15,8 @@ body{
    margin-top: 0;
 }
 
-main{
-   width: 50%;
+main{  
    text-align: center;
-   margin-left: 25%;
-   margin-right: 25%;
 }
 
 .cabecera{
