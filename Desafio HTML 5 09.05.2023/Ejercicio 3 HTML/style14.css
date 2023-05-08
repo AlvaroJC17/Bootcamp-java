@@ -1,6 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*Css Ejercicio 1*/
+
+body{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav{
+    border-top-style: solid;
+    border-color: blue;
+    border-width: 20px;
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+#logo{
+    width: 5%;
+    vertical-align: middle;
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.activo:active{
+    font-weight: bold;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: inline;
+    margin-right: 40px;
+    font-size: 24px;
+    color: #04146c;
+    text-decoration: none;
+}
+
+
+.contenedorh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 96px;
+    margin-bottom: 0;
+    color: #0a2ff1;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.parra2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #04146c;
+    font-size: 34.66px;
+    display: grid;
+    place-items: center;
+}
+
+/*Css Ejercicio 3*/
+
 .flex-container{
     display: flex;
 }
@@ -38,13 +104,15 @@ p{
     font-size: 24px;
 }
 
-.banner{
-    margin-bottom: -150px;
-    flex-wrap: nowrap;
-}
-
 .img-container{
    margin-bottom: 0;
+   width: 50%;
+   background-image: url(Recursos/M5-Desafio3-img.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   margin-bottom: -120px;
+
 }
 
 .franja-azul{
