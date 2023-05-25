@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+
+
+h1{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: #04146c;
+}
+
+h2{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: #0a2ff1;
+}
+
+h6{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #04146c; 
+}
+
+.card-text{
+
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #04146c; 
+}
+
+
+button{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #04146c;
+    border-color: #0a2ff1;
+    background-color: white;
+    border-width: 1px;
+}
+
+@media(max-width:991px){
+    button{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:1240px){
+    button{
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width:992px){
+    .card{
+        width: 20rem;
+    }
+}
+
+@media(max-width:1025px){
+    .card{
+        width: 20rem;
+    }
+}
+
+
+
+
+@media(min-width:992px){
+    .card-img-top{
+        width: 50%;
+    }
+}
+
+@media(max-width:1025px){
+    .card-img-top{
+        width: 30%;
+    }
+}
+
+@media(max-width:575px){
+    .card-img-top{
+        width: 40%;
+    }
+}
+    
+
+    
+
+
+    
