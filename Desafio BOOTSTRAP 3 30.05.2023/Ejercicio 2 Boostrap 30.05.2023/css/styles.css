@@ -24,55 +24,57 @@
     color: white;
     width: 150px;
     height: 40px;
-
 }
 
-@media(min-width: 991px) {
+@media(min-width: 992px) {
     .imagen {
         width: 80%;
     }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 992px) {
     .imagen {
         width: 80%;
     }
-
     .texto {
         display: flex;
         flex-direction: column;
     }
-
     .titulo {
         margin: 0 auto;
     }
-
     .botones {
         margin: 0 auto;
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
     .imagen {
         width: 100%;
     }
 }
 
-@media(max-width: 575px) {
+@media(max-width: 576px) {
     .imagen {
         width: 100%;
     }
-
     .contenedor {
         display: flex;
         flex-direction: column;
     }
-
     .boton {
         width: 80px;
         font-size: 0.5rem;
     }
 }
+
+
+
+
+
+
+
+
 
 
 

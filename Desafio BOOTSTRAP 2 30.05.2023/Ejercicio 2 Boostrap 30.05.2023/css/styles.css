@@ -1,37 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
-
-@media(min-width:768px){
-    .imagen{
+@media(min-width:768px) {
+    .imagen {
         width: 80%;
     }
 }
 
-@media(max-width:768px){
-    .imagen{
+@media(max-width:768px) {
+    .imagen {
         width: 100%;
     }
-    .texto{
+    .texto {
         width: 60%;
     }
 }
 
+@media(max-width:576px) {
+    .imagen {
+        width: 100%;
+    }
+    .texto {
+        width: 60%;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .parrafo{
+        font-size: 1rem;
+    }
+}
 
-h1, p{
+h1,
+p {
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
     font-size: 3.1rem;
     color: #04146c;
 }
 
-p{
+p {
     font-weight: 400;
     font-size: 1.5rem;
 }
-   
-    
 
-span{
+span {
     font-weight: bold;
     color: #0a2ff1;
 }
+
+
+
+

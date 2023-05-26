@@ -373,12 +373,7 @@ select:disabled {
   display: none !important;
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -433,10 +428,6 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield;
-}
 
 /* rtl:raw:
 [type="tel"],
@@ -454,10 +445,6 @@ legend + * {
   padding: 0;
 }
 
-::file-selector-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
 
 output {
   display: inline-block;
@@ -10723,41 +10710,23 @@ textarea.form-control-lg {
 h1, .h1 {
   font-family: "Mulish", sans-serif;
   font-weight: bold;
-  font-size: 68pt;
-  color: #0a2ff1;
+  color: #3957f1;
+  font-size: 3.5rem;
 }
 
-@media (max-width: 1116px) {
-  .card-title {
-    font-size: 1.1rem;
-  }
-  .card-text {
-    font-size: 0.7rem;
-  }
-}
-@media (max-width: 992px) {
-  .card-title {
-    font-size: 1.5rem;
-  }
-  .card-text {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 768px) {
-  .card-title {
-    font-size: 1.6rem;
-  }
-  .card-text {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 435px) {
-  .card-title {
-    font-size: 0.7rem;
-  }
-  .card-text {
-    font-size: 0.4rem;
-  }
+p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  color: #15163d;
+  font-size: 1rem;
 }
 
-/*# sourceMappingURL=style2.css.map */
+.titulo {
+  margin-top: 8rem !important;
+}
+
+.card {
+  box-shadow: 3px 3px 2px 0 rgba(30, 30, 30, 0.7);
+}
+
+/*# sourceMappingURL=style1.css.map */

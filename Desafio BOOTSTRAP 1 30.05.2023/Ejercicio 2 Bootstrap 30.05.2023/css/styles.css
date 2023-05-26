@@ -10723,23 +10723,46 @@ textarea.form-control-lg {
 h1, .h1 {
   font-family: "Mulish", sans-serif;
   font-weight: bold;
-  color: #3957f1;
-  font-size: 3.5rem;
+  font-size: 68pt;
+  color: #0a2ff1;
 }
 
-p {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  color: #15163d;
-  font-size: 1rem;
+@media (min-width: 1262px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
 }
 
-.titulo {
-  margin-top: 8rem !important;
+@media (max-width: 1262px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.7rem;
+  }
 }
 
-.card {
-  box-shadow: 3px 3px 2px 0 rgba(30, 30, 30, 0.7);
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.6rem;
+  }
+  .card-text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 435px) {
+  .card-title {
+    font-size: 0.7rem;
+  }
+  .card-text {
+    font-size: 0.4rem;
+  }
+  .titulo{
+    font-size: 2.9rem;
+  }
 }
 
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style2.css.map */
