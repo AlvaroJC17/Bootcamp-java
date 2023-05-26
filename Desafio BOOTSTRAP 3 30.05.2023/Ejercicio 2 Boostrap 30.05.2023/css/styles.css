@@ -4,14 +4,14 @@
 .titulo {
     *font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
-    font-size: 62pt;
+    font-size: 5.2rem;
     color: #04146c;
 }
 
 .parrafo {
     *font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size: 16pt;
+    font-size: 1.4rem;
     color: #04146c;
 }
 
@@ -19,7 +19,7 @@
     *font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-style: versalitas;
-    font-size: 14pt;
+    font-size: 1.1rem;
     background-color: #04146c;
     color: white;
     width: 150px;
