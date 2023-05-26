@@ -10727,16 +10727,7 @@ h1, .h1 {
   color: #0a2ff1;
 }
 
-@media (min-width: 1262px) {
-  .card-title {
-    font-size: 1.5rem;
-  }
-  .card-text {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1262px) {
+@media (max-width: 1116px) {
   .card-title {
     font-size: 1.1rem;
   }
@@ -10744,7 +10735,14 @@ h1, .h1 {
     font-size: 0.7rem;
   }
 }
-
+@media (max-width: 992px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 768px) {
   .card-title {
     font-size: 1.6rem;
@@ -10760,9 +10758,6 @@ h1, .h1 {
   .card-text {
     font-size: 0.4rem;
   }
-  .titulo{
-    font-size: 2.9rem;
-  }
 }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=styles.css.map */
