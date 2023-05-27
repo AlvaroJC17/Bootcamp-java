@@ -10727,6 +10727,8 @@ h1, .h1 {
   color: #0a2ff1;
 }
 
+/*ajuste de texto de la imagen a 1116px*/
+
 @media (max-width: 1116px) {
   .card-title {
     font-size: 1.1rem;
@@ -10735,6 +10737,7 @@ h1, .h1 {
     font-size: 0.7rem;
   }
 }
+
 @media (max-width: 992px) {
   .card-title {
     font-size: 1.5rem;
