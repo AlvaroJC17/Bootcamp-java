@@ -1,1 +1,1 @@
-# Bootcamp-java
+# Bootcamp-java-js
