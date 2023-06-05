@@ -8,7 +8,7 @@ function arrayInteres(parametros){
 var intereseGenerado = [[]];
 intereseGenerado = parametros;
 for (let i = 0; i < parametros.length; i++) {
-  intereseGenerado[i].push((parametros[i][0]*parametros[i][1]*parametros[i][2])/100);
+  intereseGenerado[i].push("[" + (parametros[i][0]*parametros[i][1]*parametros[i][2])/100 + "]" + " ");
 }
 console.log(intereseGenerado);
 alert(intereseGenerado);
