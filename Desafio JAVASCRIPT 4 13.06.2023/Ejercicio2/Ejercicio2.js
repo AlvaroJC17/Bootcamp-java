@@ -5,7 +5,8 @@ var alternativas = [[150000, 30, 0.15], [300000, 180, 0.10], [485000, 60, 0.23],
 
 
 function arrayInteres(parametros){
-intereseGenerado = parametros
+var intereseGenerado = [[]];
+intereseGenerado = parametros;
 for (let i = 0; i < parametros.length; i++) {
   intereseGenerado[i].push((parametros[i][0]*parametros[i][1]*parametros[i][2])/100);
 }
