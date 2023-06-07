@@ -10727,6 +10727,10 @@ h1, .h1 {
   color: #0a2ff1;
 }
 
+.card-title, .card-text{
+  color: white;
+}
+
 /*ajuste de texto de la imagen a 1116px*/
 
 @media (max-width: 1116px) {
