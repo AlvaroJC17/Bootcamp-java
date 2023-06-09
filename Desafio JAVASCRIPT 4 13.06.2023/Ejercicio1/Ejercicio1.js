@@ -1,6 +1,6 @@
 
-var totalIngresos = 250000000000;
-var totalEgresos =  250457545
+var totalIngresos = parseInt(prompt("Ingrese totoal de ingresos"));
+var totalEgresos =  parseInt(prompt("Ingrese total de egresos"));
 
 
 function flujoDeCaja(ingresos, egresos){

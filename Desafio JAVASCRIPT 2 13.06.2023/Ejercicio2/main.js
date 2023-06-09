@@ -1,6 +1,7 @@
 
 document.getElementById("miFormulario").addEventListener("submit", function(event) {
     event.preventDefault();
+    event.stopPropagation
 
     var usser = document.getElementById("input1").value;
     var pass = document.getElementById("input2").value;
