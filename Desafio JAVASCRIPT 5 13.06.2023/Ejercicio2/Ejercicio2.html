@@ -7,51 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <title>Ejercicio2</title>
+    <title>Ejercicio2</title>
 </head>
 
-<body class="container-fluid m-0 row justify-content-center ">
+<body class="container-fluid m-0 row justify-content-center bg-dark ">
 
-    <main  style="width: 500px;" class="container col-auto m-0">
+    <main style="width: 500px;" class="container col-auto m-0">
 
-        <form id="miFormulario" class=" mt-5 border border-4 border-primary rounded-5 p-4 container col-auto " novalidate>
+        <form id="miFormulario" class=" mt-5 border border-4 border-primary rounded-5 p-4 container col-auto "
+            novalidate>
 
             <h1 class="mb-5 text-center text-primary fs-2">Cálculo de presupuesto</h1>
 
-            <div class="mb-3">
-                <label for="input1" class="form-label"><strong class="fs-5 text-primary">Monto del presupuesto:</strong> </label>
-                <input type="number" class="form-control" id="input1" placeholder="0" required>
+            <div class="mb-5">
+                <label for="input1" class="form-label"><strong class="fs-5 text-primary">Presupuesto<span class="text-danger">*</span>:</strong>
+                </label>
+                <input type="number" class="form-control" id="input1" placeholder="0$" required>
             </div>
 
-            <div class="mb-3">
-                <label for="input2" class="form-label"><strong class="fs-5 text-primary">% Destinado:</strong> </label>
-                <input type="number" class="form-control w-25" id="input2" placeholder="0"
-                    required>
+            <div class="row">
+                <p class="col text-end pe-5 text-primary">% Destinado<span class="text-danger">*</span></p>
             </div>
 
-            <select id="seleccion" class="form-select mb-4 mt-4" aria-label="Default select example">
-                <option selected>Seleccione una opción</option>
-                <option value="1">Gastos necesarios</option>
-                <option value="2">Gastos opcionales</option>
-                <option value="3">Ahorro o inversion</option>
-              </select>
+            <div class="container d-flex row m-0 flex-nowrap justify-content-center align-items-center">
+                <div class="form-check col ">
+                    <input class="form-check-input" type="checkbox" value="Gastos necesarios" id="opcion1">
+                    <label class="form-check-label text-primary" for="opcion1">
+                        Gastos Necesarios
+                    </label>
+                </div>
+
+                <div style="width: 120px;" class=" col-1 m-0-auto container text-center">
+                    <input type="number" class="form-control  m-0-auto p-0 text-center " id="input2" placeholder="%"
+                        required>
+                </div>
+            </div>
+
+
+            <div class="container d-flex row m-0  mt-3 flex-nowrap justify-content-center align-items-center">
+                <div class="form-check col align-items-end ">
+                    <input class="form-check-input" type="checkbox" value="Gastos opcionales" id="opcion2">
+                    <label class="form-check-label text-primary" for="opcion2">
+                        Gastos Opcionales
+                    </label>
+                </div>
+
+                <div style="width: 120px;" class=" col-1 m-0-auto mt-2 container text-center">
+
+                    <input type="number" class="form-control  m-0-auto p-0 text-center " id="input3" placeholder="%"
+                        required>
+                </div>
+            </div>
+
+            <div class="container d-flex row m-0 mt-3 mb-4 flex-nowrap justify-content-center align-items-center">
+                <div class="form-check col ">
+                    <input class="form-check-input" type="checkbox" value="Ahorro e inversion" id="opcion3">
+                    <label class="form-check-label text-primary" for="opcion3">
+                        Ahorro e inversion
+                    </label>
+                </div>
+
+                <div style="width: 120px;" class=" col-1 m-0-auto mt-2 container text-center">
+
+                    <input type="number" class="form-control  m-0-auto p-0 text-center " id="input4" placeholder="%"
+                        required>
+                </div>
+            </div>
 
             <div class="container p-0 text-center">
                 <button id style="width: 100px;" type="submit" class="btn btn-primary mb-5 ">Calcular</button>
                 <button style="width: 100px;" type="reset" class="btn btn-primary mb-5">Reset</button>
             </div>
 
-            <div>
-                <p id="resultado"></p>
-            </div>
+            <div id="resultado1"></div>
+            <div id="resultado2"></div>
+            <div id="resultado3"></div>
         </form>
 
     </main>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="Ejercicio2.js"></script>
+    <script src="./js/Ejercicio2.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+

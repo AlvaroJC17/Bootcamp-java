@@ -5,12 +5,12 @@
 function validacionEdad(){
     var edad = parseInt(document.getElementById("input1").value);
 
-   if (edad >= 18) {
+   if (edad > 18) {
     alert("Bienvenido!!!");
     console.log("Bienvenido!!!");
-   } else {
-    alert("Su edad es menor a 18 años");
-    console.log("Su edad es menor a 18 años")
+   } else if(edad > 0 && edad <= 18){
+    alert("No cumple la edad requerida");
+    console.log("No cumple la edad requerida")
    }
     
 }

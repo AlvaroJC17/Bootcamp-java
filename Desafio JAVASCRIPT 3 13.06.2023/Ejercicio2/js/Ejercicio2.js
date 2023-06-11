@@ -9,8 +9,6 @@ for (let i = 0; i < alternativas.length; i++) {
 
 
 console.log(intereseGenerado);
-alert(intereseGenerado);
-    
 
-// Nota: se imprime a drede por alert y consola para mostrar el resultado por dos vias diferentes
+    
    

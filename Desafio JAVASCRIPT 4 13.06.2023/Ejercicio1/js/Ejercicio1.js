@@ -1,5 +1,5 @@
 
-var totalIngresos = parseInt(prompt("Ingrese totoal de ingresos"));
+var totalIngresos = parseInt(prompt("Ingrese total de ingresos"));
 var totalEgresos =  parseInt(prompt("Ingrese total de egresos"));
 
 

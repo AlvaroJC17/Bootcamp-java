@@ -11,7 +11,7 @@ document.getElementById("miFormulario").addEventListener("submit", function (cal
 
     var div = document.getElementById("resultado");
     div.classList.add("mt-2", "text-center", "fw-bold", "fs-6", "text-primary", "text-uppercase",);
-    document.getElementById("resultado").innerHTML = "El total de punto de equilibrio es: " + cvRedondeo;
+    document.getElementById("resultado").innerHTML = "El punto de equilibrio es: " + cvRedondeo;
 
 });
 

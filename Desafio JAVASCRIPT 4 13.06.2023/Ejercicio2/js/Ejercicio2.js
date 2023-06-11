@@ -11,10 +11,10 @@ for (let i = 0; i < parametros.length; i++) {
   intereseGenerado[i].push("[" + (parametros[i][0]*parametros[i][1]*parametros[i][2])/100 + "]" + " ");
 }
 console.log(intereseGenerado);
-alert(intereseGenerado);
+
 }
 
 /*Llamado a la funcion*/ 
 arrayInteres(alternativas);
 
-// Nota: se imprime a drede por alert y consola para mostrar el resultado por dos vias diferentes
+
