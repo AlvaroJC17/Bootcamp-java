@@ -1,27 +1,46 @@
 
-var totalIngresos = parseInt(prompt("Ingrese total de ingresos"));
-var totalEgresos =  parseInt(prompt("Ingrese total de egresos"));
+document.getElementById("miFormulario").addEventListener("submit", function (evento) {
+    evento.preventDefault();
+    evento.stopPropagation();
 
+    var valorInputs = document.getElementsByClassName("valorIput");
+    calculoFlujoDeCaja(valorInputs);
+});
 
-function flujoDeCaja(ingresos, egresos){
-    if (ingresos > egresos) {
+function calculoFlujoDeCaja(flujoDeCaja) {
+
+    var sumaIngresos = 0;
+    var sumaEgresos = 0;
+
+    for (let i = 0; i < flujoDeCaja.length; i++) {
+        if (flujoDeCaja[i].value != "" && i % 2 == 0) {
+            valorIngre = parseFloat(flujoDeCaja[i].value);
+            sumaIngresos += valorIngre;
+
+        } else if (flujoDeCaja[i].value != "" && i % 2 != 0) {
+            valorEgre = parseFloat(flujoDeCaja[i].value);
+            sumaEgresos += valorEgre;
+        }
+    }
+
+    if (sumaIngresos > sumaEgresos) {
         console.log("1");
         alert("1");
-    }else if(ingresos == egresos){
+    } else if (sumaIngresos == sumaEgresos) {
         console.log("0");
         alert("0");
-    }else {
+    } else {
         console.log("-1")
         alert("-1");
-    }
-    }
+    };
+}
 
-    //llamado a la funcion
+    
 
-    flujoDeCaja(totalIngresos, totalEgresos);
+   
+   
+     
 
-// Nota: se imprime a drede por alert y consola para mostrar el resultado por dos vias diferentes
+   
 
 
-
- 

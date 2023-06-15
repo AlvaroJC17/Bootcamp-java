@@ -10,80 +10,43 @@
     <title>Ejercicio2</title>
 </head>
 
-<body class="container-fluid m-0 row justify-content-center bg-dark ">
+<body class="container-fluid m-0 row justify-content-center bg-dark">
 
-    <main style="width: 500px;" class="container col-auto m-0">
+    <main style="width: 500px;" class="container col-auto m-0 mt-5 border border-4 border-primary rounded-5 p-4">
 
-        <form id="miFormulario" class=" mt-5 border border-4 border-primary rounded-5 p-4 container col-auto "
+        <!--formulario general-->
+        <form id="miFormulario" class="  container col-auto "
             novalidate>
 
-            <h1 class="mb-5 text-center text-primary fs-2">Cálculo de presupuesto</h1>
+            <h1 class="mb-5 text-center text-primary fs-4">CÁLCULO DE PRESUPUESTO</h1>
 
+            <!--imput presupuesto-->
             <div class="mb-5">
-                <label for="input1" class="form-label"><strong class="fs-5 text-primary">Presupuesto<span class="text-danger">*</span>:</strong>
+                <label for="input1" class="form-label"><strong class="fs-5 text-primary">PRESUPUESTO<span class="text-danger">*</span>:</strong>
                 </label>
                 <input type="number" class="form-control" id="input1" placeholder="0$" required>
             </div>
 
-            <div class="row">
-                <p class="col text-end pe-5 text-primary">% Destinado<span class="text-danger">*</span></p>
+            <!--creacion del boton para agregar div-->
+            <div class="row container">
+                <p class="text-primary col-8 m-0 p-0">AGREGUE CATEGORIAS DESEADAS:</p>
+                <button id="b1" class="col-1 btn btn-success border border-1">+</button>
+            </div>
+            <div>
+                <div id="b2" class="container"></div>
             </div>
 
-            <div class="container d-flex row m-0 flex-nowrap justify-content-center align-items-center">
-                <div class="form-check col ">
-                    <input class="form-check-input" type="checkbox" value="Gastos necesarios" id="opcion1">
-                    <label class="form-check-label text-primary" for="opcion1">
-                        Gastos Necesarios
-                    </label>
-                </div>
-
-                <div style="width: 120px;" class=" col-1 m-0-auto container text-center">
-                    <input type="number" class="form-control  m-0-auto p-0 text-center " id="input2" placeholder="%"
-                        required>
-                </div>
-            </div>
-
-
-            <div class="container d-flex row m-0  mt-3 flex-nowrap justify-content-center align-items-center">
-                <div class="form-check col align-items-end ">
-                    <input class="form-check-input" type="checkbox" value="Gastos opcionales" id="opcion2">
-                    <label class="form-check-label text-primary" for="opcion2">
-                        Gastos Opcionales
-                    </label>
-                </div>
-
-                <div style="width: 120px;" class=" col-1 m-0-auto mt-2 container text-center">
-
-                    <input type="number" class="form-control  m-0-auto p-0 text-center " id="input3" placeholder="%"
-                        required>
-                </div>
-            </div>
-
-            <div class="container d-flex row m-0 mt-3 mb-4 flex-nowrap justify-content-center align-items-center">
-                <div class="form-check col ">
-                    <input class="form-check-input" type="checkbox" value="Ahorro e inversion" id="opcion3">
-                    <label class="form-check-label text-primary" for="opcion3">
-                        Ahorro e inversion
-                    </label>
-                </div>
-
-                <div style="width: 120px;" class=" col-1 m-0-auto mt-2 container text-center">
-
-                    <input type="number" class="form-control  m-0-auto p-0 text-center " id="input4" placeholder="%"
-                        required>
-                </div>
-            </div>
-
-            <div class="container p-0 text-center">
+                
+            <!--botones para calculo y reset-->
+            <div class="container p-0 text-center mt-5">
                 <button id style="width: 100px;" type="submit" class="btn btn-primary mb-5 ">Calcular</button>
-                <button style="width: 100px;" type="reset" class="btn btn-primary mb-5">Reset</button>
+                <button id="botonReset" style="width: 100px;" type="reset" class="btn btn-primary mb-5">Reset</button>
             </div>
-
-            <div id="resultado1"></div>
-            <div id="resultado2"></div>
-            <div id="resultado3"></div>
         </form>
 
+            <!--div contenedor donde se imprimen todos los resultados-->
+        <div id="divBody" class="text-primary  text-center"></div>
+        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -93,6 +56,16 @@
 </body>
 
 </html>
+
+
+          
+       
+               
+
+
+
+          
+
 
 
 

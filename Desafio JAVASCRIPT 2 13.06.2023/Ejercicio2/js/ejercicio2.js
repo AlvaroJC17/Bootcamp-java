@@ -1,17 +1,17 @@
 
 document.getElementById("miFormulario").addEventListener("submit", function(event) {
     event.preventDefault();
-    event.stopPropagation
+    event.stopPropagation();
 
     var usser = document.getElementById("input1").value;
     var pass = document.getElementById("input2").value;
 
     if (usser == "admin" && pass == "1234" && usser != "" && pass != "") {
-        alert("Bienvenido!!!")
-        console.log("Bienvenido!!!")
+        alert("Bienvenido!!!");
+        console.log("Bienvenido!!!");
     } else {
-        alert("Credenciales incorrectas o faltantes...")
-        console.log("Credenciales incorrectas o faltantes...")
+        alert("Credenciales incorrectas o faltantes...");
+        console.error("Credenciales incorrectas o faltantes...");
     }
 });
 

@@ -1,6 +1,7 @@
 
 
-var presupuesto = parseInt(prompt("Ingrese valor del presupuesto"));
+var presupuesto =[ parseInt(prompt("Ingrese valor del presupuesto"))];
+console.log(presupuesto);
 
 // 50% del presupuesto
 
@@ -25,7 +26,6 @@ console.log("El total para ahorro e inversion es: " + redondeoInversion + "$");
 alert("El total para ahorro e inversion es: " + redondeoInversion + "$");
 
 // Nota: se imprime a drede por alert y consola para mostrar el resultado por dos vias diferentes
-
 
 
 
