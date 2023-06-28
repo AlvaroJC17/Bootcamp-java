@@ -1,0 +1,25 @@
+
+.tareas-lista-contenedor{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+/*Colores*/
+
+.tarea-contenedor:nth-child(3n+1){
+  background-color: #1b1b32;
+}
+
+.tarea-contenedor:nth-child(3n+2){
+  background-color: #2a2a40;
+}
+
+.tarea-contenedor:nth-child(3n+3){
+  background-color: #3b3b4f;
+}
+
+
