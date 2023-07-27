@@ -12,11 +12,11 @@ public class calculadora{
 	            return;
 	        }
 
-	        double num1, num2;
+	        int num1, num2;
 	        String operacion;
 
-	        num1 = Double.parseDouble(args[0]);
-	        num2 = Double.parseDouble(args[1]);
+	        num1 = Integer.parseInt( args[0]);
+	        num2 = Integer.parseInt( args[1]);
 	        operacion = args[2].toLowerCase();
 	       
 	        double resultado = calcular(num1, num2, operacion);
@@ -28,7 +28,7 @@ public class calculadora{
 	        }
 	}
 	
-	 public static double calcular(double num1, double num2, String operacion) {
+	 public static double calcular(int num1, int num2, String operacion) {
 	        switch (operacion) {
 	            case "sum":
 	                return num1 + num2;
@@ -38,7 +38,7 @@ public class calculadora{
 	                return num1 * num2;
 	            case "div":
 	                if (num2 != 0) {
-	                    return num1 / num2;
+	                    return (double) num1 / num2;
 	                } else {
 	                    return Double.NaN;
 	                }
