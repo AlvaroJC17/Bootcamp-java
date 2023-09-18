@@ -59,7 +59,7 @@ public class MainApp {
 			}
 
 			switch (eleccion) {
-			case 1:
+			case 1: //Opcion 1 es para ver los productos disponibles en el supermercado
 				// Se usa el for each para mostrar los productos en la lista de
 				// productosDisponibles
 				for (ProductoDeAlmacen pro : productosDisponibles) {
@@ -69,7 +69,7 @@ public class MainApp {
 				salir = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 2:
+			case 2: // Opcion 2 es para agreagar productos al carrito
 				boolean salir2 = false;
 				int opcion2;
 
@@ -127,8 +127,7 @@ public class MainApp {
 				salir = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 3:
-
+			case 3: // Opcion 3 es para ver el contenido del carrito y borrar productos del carrito
 				boolean salir3;
 				do {
 					// metodo para ver el contenido del carrito
@@ -159,14 +158,14 @@ public class MainApp {
 								ProductoDeAlmacen borraProductos = it.next();
 								if (borraProductos.getNombre().equalsIgnoreCase(nombre)) { // se compara el nombre de producto ingresado con los productos agregados al carrito
 									it.remove(); // Si el nombre ingresado es igual a uno del carrito, entonces borra ese prodcuto
-									System.out.println("Producto borrado correctamente...");
+									System.err.println("Producto borrado correctamente...");
 									comprobar = true;
 								}
 
 							}
 							// validacion para mostrar mensaje de error cuando no este disponible el producto dentro del carrito
 							if (!comprobar) {
-								System.err.println("Producto no dispoble..");
+								System.err.println("El producto ingresado no se encuentra dentro del carrito..");
 							}
 						} else if (opcion3 == 2) {
 							salir3 = false;
@@ -182,21 +181,21 @@ public class MainApp {
 				salir = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 4:
+			case 4: // Opcion 4 es para ver la cantidad de productos dentro del carrito
 				// uso del metodo para ver la cantidad de prodcutos
 				System.out.println("Actualmente posee " + carrito.verCantidad() + " productos en el carrito...");
 				System.out.println();
 				salir = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 5:
+			case 5: // opcion 5 es para ver el importe total incluyendo el IVA
 				// uso del motodo para ver el importe total
 				System.out.println("El total del importe incluyendo el IVA es de: " + carrito.importeTotal());
 				System.out.println();
 				salir = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 6:
+			case 6: // Opcion 6  es para cerrar el programa
 				System.out.println("Gracias por comprar con nosotros....");
 				salir = false;
 				break;
