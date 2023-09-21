@@ -5,13 +5,13 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class MainApp {
+	
+
 
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-
 		int eleccion = 0;
-		boolean salir = false;
+		boolean salirMenuPrincipal = false;
 		Carrito carrito = new Carrito(); // Creamos el objeto carrito
 
 		// creamos los productos del almacen
@@ -19,8 +19,8 @@ public class MainApp {
 		ProductoDeAlmacen Azucar = new ProductoDeAlmacen("Azucar", 20, 2);
 		ProductoDeAlmacen Pan = new ProductoDeAlmacen("Pan", 17, 3);
 		ProductoDeAlmacen Sal = new ProductoDeAlmacen("Sal", 7, 4);
-		ProductoDeAlmacen Pollo = new ProductoDeAlmacen("Pollo", 250, 1);
-		ProductoDeAlmacen Pescado = new ProductoDeAlmacen("Pescado", 150, 1);
+		ProductoDeAlmacen Pollo = new ProductoDeAlmacen("Pollo", 250, 5);
+		ProductoDeAlmacen Pescado = new ProductoDeAlmacen("Pescado", 150, 6);
 
 		// Creamos la lista de los productos disponibles
 		ArrayList<ProductoDeAlmacen> productosDisponibles = new ArrayList<>();
@@ -35,7 +35,8 @@ public class MainApp {
 			// se utiliza las excepciones para notificar cuando se elije la opcion
 			// incorrecta
 			try {
-				System.out.println("\n*** Elija una opcion del menu ***");
+				System.out.println("\n*** ELIJA UNA OPCION DEL MENU ***");
+				System.out.println();
 				System.out.println("1. Productos disponibles" + "\n" + "2. Agregar productos al carrito" + "\n"
 						+ "3. Ver contenido del carrito" + "\n" + "4. Cantidad de productos" + "\n"
 						+ "5. Importe total " + "\n" + "6. Salir");
@@ -43,42 +44,37 @@ public class MainApp {
 				eleccion = sc.nextInt();
 
 				if (eleccion > 0 && eleccion <= 6) {
-					salir = false;
+					salirMenuPrincipal = false;
 				} else {
-					System.err.println("Solo se permiten numeros del 1 al 6");
+					System.err.println("Solo se permiten numeros del 1 al 6"); // mensaje de error cuando se coloca un numero fuera de del rango entre 1 y 2
+					salirMenuPrincipal = true;
 				}
 			} catch (Exception e) {
-				System.err.println("Solo se permiten numeros del 1 al 6");
-			} finally {
-				if (eleccion > 0 && eleccion <= 6) {
-					salir = false;
-				} else {
-					salir = true;
-				}
-				sc.nextLine(); // limpiamos el buffer del scanner
-			}
+				salirMenuPrincipal = true;
+				System.err.println("Solo se permiten numeros del 1 al 6"); // mensaje de error cuando se crean la excepcion al ingresar una letra
+			} 
+			sc.nextLine(); // limpiamos el buffer del scanner
 
 			switch (eleccion) {
-			case 1: //Opcion 1 es para ver los productos disponibles en el supermercado
+			case 1: // Opcion 1 es para ver los productos disponibles en el supermercado
 				// Se usa el for each para mostrar los productos en la lista de
 				// productosDisponibles
 				for (ProductoDeAlmacen pro : productosDisponibles) {
-					System.out.println(pro.getNombre() + " " + pro.getPrecio() + "$");
+					System.out.println("Producto: " + pro.getNombre() + " / " + "Precio: " + pro.getPrecio() + "$" + " / " + "Codigo: " + pro.getCodigo());
 				}
 				System.out.println();
-				salir = volverMenu(); // metodo estatico para volver al menu principal
+				salirMenuPrincipal = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 2: // Opcion 2 es para agreagar productos al carrito
-				boolean salir2 = false;
-				int opcion2;
-
+			case 2:
+				
+				boolean salirCase2;
 				do {
-					boolean comprobar = false; // variable para comprobar si el producto esta disponible o no
-					opcion2 = 0; // variable para capturar la desicion del usuario si compra otro producto o
-									// vuelve al menu
+					salirCase2 = false;
+					boolean comprobarDisponibilidad = false; // variable para comprobar si el producto esta disponible o no
+					int opcion2 = 0; // variable para capturar la desicion del usuario si compra otro producto o vuelve al menu
 					System.out.println();
-
+					System.out.println("Productos disponibles para comprar:");
 					for (ProductoDeAlmacen pro : productosDisponibles) { // primero mostramos la lista de productos para
 																			// facilitar la compra del usuario
 						System.out.println(pro.getNombre() + " " + pro.getPrecio() + "$");
@@ -86,71 +82,82 @@ public class MainApp {
 
 					System.out.println();
 					System.out.print("Ingrese nombre del producto a comprar: ");
-					String nombre = "";
-					nombre = sc.nextLine(); // capturamos el nombre del producto que el usuario quiere agregar al
-											// carrito
+					String nombre = sc.nextLine(); // capturamos el nombre del producto que el usuario quiere agregar al carrito
 
-					// se usa el iterador para recorrer la lista de productosDisponibles
+					// se usa el iterador para recorrer la lista de productosDisponibles y hacer la comparacion
 					Iterator<ProductoDeAlmacen> it = productosDisponibles.iterator();
 					while (it.hasNext()) {
 						ProductoDeAlmacen productos = it.next();
 						if (productos.getNombre().equalsIgnoreCase(nombre)) { // se compara el nombre producto ingresado con los productos disponibles, sin son iguales se agregar al carrito
 							carrito.agregarProducto(productos); // uso del metodo agregar
 							System.out.println("Producto agregado al carrito correctamente...");
-							comprobar = true;
+							comprobarDisponibilidad = true;
 						}
 					}
 					
-					if (!comprobar) { // si el nombre del producto no existe, entonces entra en este if y muestra el siguiente mensaje
+					if (!comprobarDisponibilidad) { // si el nombre del producto no existe, entonces entra en este if y muestra el siguiente mensaje
 						System.err.println("Producto no dispoble..");
 					}
 					System.out.println();
+						
+					boolean salirSubMenu = false; // variable para salir del bucle del submenu
+					do {
 					try { // capturamos las excepciones y mostramos un mensaje de error 
 						System.out.println("1. Agregar otro producto");
 						System.out.println("2. Volver al menu");
 						opcion2 = sc.nextInt();
 
 						if (opcion2 == 1) {
-							salir2 = true;
+							salirSubMenu = false;
+							salirCase2 = true;
 						} else if (opcion2 == 2) {
-							salir2 = false;
+							salirSubMenu = false;
+							salirMenuPrincipal = true;
 						} else {
 							throw new Exception(); //creamos una excepcion si el usuario no ingreso 1 o 2
 						}
 					} catch (Exception e) {
+						salirMenuPrincipal = true;
+						salirSubMenu = true;
 						System.err.println("Solo se permiten numeros entre 1 y 2");
 					}
-
-					sc.nextLine(); //limpiamos el buffer del scanner
-				} while (salir2);
-
-				salir = volverMenu(); // metodo estatico para volver al menu principal
+					sc.nextLine(); //borramos el buffer del scanner
+					
+					} while (salirSubMenu);
+				} while (salirCase2);
 				break;
 
-			case 3: // Opcion 3 es para ver el contenido del carrito y borrar productos del carrito
-				boolean salir3;
+			case 3:
+				
+				boolean salirCase3;
 				do {
-					// metodo para ver el contenido del carrito
-					System.out.println("Contenido del Carrito:");
-					carrito.contenidoCarrito();
-					System.out.println();
+					
+					if (carrito.carritoVacio()) { // Uso del metodo para ver si el carrito esta vacio
+						System.out.println("Contenido del Carrito:" + "\n" + "El carrito esta vacio...");
+						
+					}else {
+						System.out.println("Contenido del Carrito:");
+						carrito.contenidoCarrito(); // metodo para ver el contenido del carrito
+					}
 
 					int opcion3 = 0;
-					salir3 = false;
-
+					salirCase3 = false;
+					boolean salirAlMenu2 = false;
+						
+					do {
 					try { // capturamos excepciones y mostramos mensaje de error
-
+						System.out.println();
 						System.out.println("1. Eliminar producto del carrito");
 						System.out.println("2. Volver al menu");
 						opcion3 = sc.nextInt();
 						sc.nextLine();
-
+						
 						if (opcion3 == 1) {
 							boolean comprobar = false; // variable para comprobar si el producto ingresado esta dentro del carrito
 							System.out.println("Ingrese nombre del producto a eliminar:");
 							String nombre = "";
 							nombre = sc.nextLine(); // pedimos nombre del producto al usuario
-							salir3 = true;
+							salirCase3 = true;
 
 							// se usa el iterador para recorrer la lista de productosDisponibles
 							Iterator<ProductoDeAlmacen> it = carrito.productosCarrito.iterator();
@@ -167,44 +174,46 @@ public class MainApp {
 							if (!comprobar) {
 								System.err.println("El producto ingresado no se encuentra dentro del carrito..");
 							}
-						} else if (opcion3 == 2) {
-							salir3 = false;
+						} else if (opcion3 == 2) {						
+							salirCase3 = false;
+							salirMenuPrincipal = true;
 						} else {
 							throw new Exception(); // creamos una excepcion si el usuario no ingreso 1 o 2
 						}
 					} catch (Exception f) {
+						salirAlMenu2 = false;
+						salirCase3 = true;
 						System.err.println("Solo se permiten numeros entre 1 y 2");
+						sc.nextLine();
 					}
-
-				} while (salir3);
-
-				salir = volverMenu(); // metodo estatico para volver al menu principal
+					} while (salirAlMenu2);
+				} while (salirCase3);
 				break;
-
-			case 4: // Opcion 4 es para ver la cantidad de productos dentro del carrito
+						
+			case 4:
 				// uso del metodo para ver la cantidad de prodcutos
 				System.out.println("Actualmente posee " + carrito.verCantidad() + " productos en el carrito...");
 				System.out.println();
-				salir = volverMenu(); // metodo estatico para volver al menu principal
+				salirMenuPrincipal = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 5: // opcion 5 es para ver el importe total incluyendo el IVA
+			case 5:
 				// uso del motodo para ver el importe total
 				System.out.println("El total del importe incluyendo el IVA es de: " + carrito.importeTotal());
 				System.out.println();
-				salir = volverMenu(); // metodo estatico para volver al menu principal
+				salirMenuPrincipal = volverMenu(); // metodo estatico para volver al menu principal
 				break;
 
-			case 6: // Opcion 6  es para cerrar el programa
+			case 6:
 				System.out.println("Gracias por comprar con nosotros....");
-				salir = false;
+				salirMenuPrincipal = false;
 				break;
 
 			default:
 				break;
 			}
 
-		} while (salir);
+		} while (salirMenuPrincipal);
 		sc.close();
 	}
 
@@ -212,7 +221,7 @@ public class MainApp {
 	public static boolean volverMenu() {
 		Scanner sc = new Scanner(System.in);
 		boolean salir = false;
-		System.out.println("Presione cualquier tecla para volver al menu....");
+		System.out.println("Presione Enter o cualquier tecla para volver al menu....");
 		String entrada = sc.nextLine();
 
 		if (entrada != null) {

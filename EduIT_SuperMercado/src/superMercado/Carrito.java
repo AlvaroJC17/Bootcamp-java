@@ -37,8 +37,14 @@ public class Carrito {
 
 	public void contenidoCarrito() {
 		for (ProductoDeAlmacen ca : productosCarrito) {
-			System.out.println(ca.getNombre());
+			System.out.println("* " + ca.getNombre());
 		}
+	}
+
+	public boolean carritoVacio() {
+		boolean estaVacio = productosCarrito.isEmpty();
+		return estaVacio;
+		
 	}
 
 }
